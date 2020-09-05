@@ -15,7 +15,7 @@ public class readScenario {
             // returns true if there is another line to read
             while (sc.hasNextLine()) {
                 System.out.println(sc.nextLine()); // returns the line that was skipped
-                linecount++;
+                this.linecount++;
             }
             sc.close(); // closes the scanner
         } catch (IOException e) {
