@@ -14,7 +14,8 @@ public class Aircraft {
     }
 
     private long nextId() {
-        return long;
+        long hi = 5;
+        return hi;
     }
     
 }

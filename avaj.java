@@ -34,7 +34,8 @@ public class avaj {
         // readScenario reader = new readScenario();
         validateScenario validator = new validateScenario();
         if (validator.validateFormat("demo.txt")) {
-            simulate
+            simulator = new Simulator;
+            simulator.load("demo.txt");
         } else {
             System.out.println("Error!");
         };

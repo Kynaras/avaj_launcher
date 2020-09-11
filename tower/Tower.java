@@ -1,10 +1,15 @@
 package tower;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import interfaces.Flyable;
 
 public class Tower {
-    public void register(Flyable flyable){
 
+    private List<Flyable> observers = new ArrayList<>();
+    public void register(Flyable flyable){
+        observers.add(flyable);
     }
     public void unregister(Flyable flyable) {
         

@@ -3,7 +3,7 @@ package utilities;
 import java.io.*;
 import java.util.Scanner;
 
-import globals.globals;
+import globals.Globals;
 
 public class validateScenario {
 
@@ -30,7 +30,7 @@ public class validateScenario {
         String trimmedLine = line.trim();
         String words[];
         words = trimmedLine.split("\\s+");
-        if (!globals.VEHICLES.contains(words[0]) || !isNumeric(words[2]) || !isNumeric(words[3]) || !isNumeric(words[4]) ) {
+        if (!Globals.VEHICLES.contains(words[0]) || !isNumeric(words[2]) || !isNumeric(words[3]) || !isNumeric(words[4]) ) {
             return false;
         }
         return true;
