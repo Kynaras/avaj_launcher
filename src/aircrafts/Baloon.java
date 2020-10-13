@@ -40,9 +40,10 @@ public class Baloon extends Aircraft implements Flyable {
         this.logWeather(this.type, this.name, this.id, message);
         if (this.coordinates.getHeight() <= 0) {
             this.weatherTower.unregister(this);
+            System.out.println(type + "#" + this.name + "(" + this.id + ") " + "landing");
             System.out.println("Tower update: " + type + "#" + this.name + "(" + this.id + ") " + "has been deregistered from the tower");
-        }
 
+        }
 
     }
 
