@@ -28,6 +28,10 @@ public class ValidateScenario {
 
         words = trimmedLine.split("\\s+");
         if (words.length != 5) {
+            if (words.length > 5){
+                this.errorMessage = "Too many elements are present in the starting specifications";
+                return false;
+            }
             this.errorMessage = "Not all elements of the vehicle details are present. You need: A vehicle type, name and starting cordinates.";
             return false;
         }
